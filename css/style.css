@@ -33,6 +33,7 @@ a {
 	/* color: #373d8a; */
 	background: -webkit-linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
@@ -419,6 +420,7 @@ p {
 	text-align: center;
 	background: -webkit-linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 48px;
 	margin-bottom: 64px;
@@ -571,6 +573,7 @@ h3 {
 	text-align: center;
 	background: -webkit-linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
