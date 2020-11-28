@@ -24,7 +24,8 @@ a {
 	z-index: 10001;
 }
 
-.doch, .blog-doch {
+.doch,
+.blog-doch {
 	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 }
 
@@ -253,6 +254,7 @@ nav {
 	letter-spacing: 0.1px;
 	color: #ffffff;
 	cursor: pointer;
+	margin-top: 5vh;
 }
 
 @media screen and (max-width: 960px) {
@@ -376,7 +378,7 @@ p {
 	color: #303e93;
 	padding: 15px 47px;
 	background: transparent;
-	border-radius: 26px;
+	border-radius: 30px;
 	border-color: #303e93;
 	cursor: pointer;
 }
@@ -422,77 +424,6 @@ p {
 	margin-bottom: 64px;
 }
 
-/* ! faq accordian */
-#accordian-container {
-	width: 100%;
-	padding-left: 0;
-	list-style: none none inside;
-	overflow: hidden;
-	background-color: #fff;
-}
-#accordian-container li {
-	position: relative;
-	border: 1px solid #fff;
-	font-size: 24px;
-	font-weight: normal;
-}
-#accordian-container li h4 {
-	font-family: 'Fira Sans Condensed';
-	margin: auto 0;
-	padding: 10px 20px;
-	color: #000;
-	cursor: pointer;
-	font-weight: normal;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-#accordian-container li h4 .glyph-wrapper {
-	/* position: absolute; */
-	width: 26px;
-	height: 26px;
-	/* right: 2rem;
-	top: 11px; */
-	transition: all 0.5s 0.1s ease;
-}
-#accordian-container li h4 .glyph-wrapper span {
-	position: relative;
-	left: 50%;
-	top: 50%;
-	display: block;
-	background-color: #000;
-	transition: inherit;
-	transform-origin: center;
-}
-#accordian-container li h4 .glyph-wrapper span.line-h {
-	width: inherit;
-	height: 2px;
-	transform: translate(-50%, calc(-50% + 1px));
-}
-#accordian-container li h4 .glyph-wrapper span.line-v {
-	width: 2px;
-	height: inherit;
-	transform: translate(-50%, calc(-50% - 1px));
-}
-.accordion {
-	overflow: hidden;
-	transition: all 0.4s ease;
-	font-size: 18px;
-	font-family: 'Fira Sans Condensed';
-}
-.active + .accordion {
-	margin: 16px 20px;
-}
-.inactive + .accordion {
-	max-height: 0;
-	transition: all 0.4s ease;
-}
-#accordian-container {
-	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
-	border-radius: 8px;
-	margin: 32px 0;
-}
-
 .videosection-container {
 	background: #f7f7f7;
 	padding: 40px 0;
@@ -510,8 +441,7 @@ p {
 }
 
 .video {
-	width: 396px;
-	height: 222.75px;
+	width: 300px;
 }
 
 @media screen and (max-width: 450px) {
@@ -715,6 +645,7 @@ h3 {
 }
 
 .services-left-content {
+	margin-top: 100px;
 	position: sticky;
 	top: 8vh;
 }
@@ -788,6 +719,9 @@ h3 {
 		padding: 9px 40px;
 		margin: 20px auto;
 	}
+	..services-left-content {
+		margin-top: 10px;
+	}
 }
 
 .slide-container {
@@ -843,7 +777,6 @@ h3 {
 	align-content: center;
 	justify-content: center;
 	align-items: center;
-
 }
 .slider .slide img {
 	align-self: center;
@@ -878,7 +811,7 @@ h3 {
 
 .gif {
 	margin: 50px 50%;
-	transform: translateX(-50%)
+	transform: translateX(-50%);
 }
 
 @media screen and (max-width: 960px) {
@@ -895,4 +828,113 @@ h3 {
 	.sub-heading-big {
 		font-size: 24px;
 	}
+}
+
+.uk-section {
+	padding: 40px 0 !important;
+}
+
+/* ! faq accordian */
+/* Arrow Animation Styles Start */
+
+.accordian,
+.arrow,
+.arrow:before,
+.arrow:after,
+.content {
+	transition: all 0.3s ease-in-out;
+}
+
+.arrow {
+	position: absolute;
+	right: 30px;
+	top: 33px;
+}
+
+.arrow,
+.arrow:before,
+.arrow:after {
+	border-radius: 25px;
+}
+
+.arrow:before {
+	content: ' ';
+	width: 20px;
+	height: 2px;
+	left: 50%;
+	margin-left: -23px;
+	background-color: black;
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.arrow:after {
+	content: ' ';
+	width: 20px;
+	height: 2px;
+	background-color: black;
+	position: absolute;
+	right: -11px;
+	transform: rotate(-45deg);
+}
+
+.open .arrow:before {
+	transform: rotate(-45deg);
+}
+
+.open .arrow:after {
+	transform: rotate(45deg);
+}
+
+/* Arrow Animation Styles End */
+
+.accordian-heading {
+	font-family: 'Fira Sans Condensed';
+	font-size: 24px;
+	line-height: 29px;
+	letter-spacing: 0.2px;
+	color: #343434;
+}
+
+.accordian-content {
+	font-family: 'Fira Sans Condensed';
+	font-size: 18px;
+	line-height: 22px;
+	letter-spacing: 0.2px;
+	color: #343434;
+}
+
+.accordian-container {
+	list-style-type: none;
+	padding: 0;
+	margin: 32px 0;
+}
+
+.accordian {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	padding: 20px;
+	overflow: hidden;
+	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+}
+
+.accordian.open {
+	cursor: pointer;
+}
+
+.accordian-heading {
+	display: inline;
+}
+
+.content {
+	display: none;
+	opacity: 0;
+	margin-top: 30px;
+}
+
+.open .content {
+	display: block;
+	opacity: 1;
 }

@@ -100,47 +100,9 @@ $('.sec-carousel').owlCarousel({
 })
 
 // ! faq accordian
-// CSS animation maps:
-const rotateH = {
-	transform: 'rotateZ(90deg)',
-	left: 0,
-}
-const rotateH_Rev = {
-	transform: 'rotateZ(0deg)',
-	top: '50%',
-}
-const rotateV = {
-	transform: 'rotateZ(90deg)',
-	top: 0,
-}
-
-// Wait for DOM content to be loaded:
-$(function () {
-	$('li').on('click', '.inactive', (evt) => {
-		const $currTarg = $(evt.currentTarget),
-			$accordion = $currTarg.next('.accordion'),
-			$lineH = $currTarg.find('.line-h')
-		$('h4.active').trigger('click')
-		$lineH.css(rotateH)
-		setTimeout(() => {
-			$lineH.parent().css({ transform: 'rotateZ(90deg)' })
-			$currTarg.toggleClass('inactive active')
-		}, 250)
-	})
-
-	$('li').on('click', '.active', (evt) => {
-		const $currTarg = $(evt.currentTarget),
-			$accordion = $currTarg.next('.accordion'),
-			$lineH = $currTarg.find('.line-h')
-		$currTarg.find('.glyph-wrapper').css({ transform: 'rotateZ(-90deg)' })
-		setTimeout(() => {
-			$lineH.css(rotateH_Rev)
-			$currTarg.toggleClass('inactive active')
-		}, 250)
-	})
-
-	$('.default').trigger('click')
-} )
+$('.accordian').click(function () {
+	$(this).toggleClass('open')
+})
 
 
 // ! img carousel
