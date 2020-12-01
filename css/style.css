@@ -664,6 +664,12 @@ h3 {
 	padding: 40px 40px;
 }
 
+.services-card img {
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 31px;
+}
+
 .services-heading {
 	font-family: 'Fira Sans';
 	font-weight: 600;
