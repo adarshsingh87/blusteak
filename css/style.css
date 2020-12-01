@@ -648,9 +648,9 @@ h3 {
 }
 
 .services-left-content {
-	margin-top: 100px;
+	margin-top: 32px;
 	position: sticky;
-	top: 8vh;
+	top: 12vh;
 }
 
 .services-card {
@@ -659,8 +659,8 @@ h3 {
 	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.16);
 	border-radius: 16px;
 	margin: 0 auto;
-	margin-top: 100px;
-	max-width: 400px;
+	margin-top: 32px;
+	max-width: 604px;
 	padding: 40px 40px;
 }
 
@@ -703,7 +703,7 @@ h3 {
 	border-radius: 64px;
 	color: #fff;
 	padding: 18px 88px;
-	margin: 50px auto;
+	margin: 32px auto;
 	cursor: pointer;
 }
 
