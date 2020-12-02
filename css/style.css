@@ -238,7 +238,7 @@ nav {
 	letter-spacing: 0.2px;
 	color: #ffffff;
 	margin: 30px 0;
-	max-width: 812px;
+	max-width: 823px;
 }
 
 .hero-btn {
@@ -868,10 +868,10 @@ h3 {
 
 .arrow:before {
 	content: ' ';
-	width: 20px;
+	width: 12px;
 	height: 2px;
 	left: 50%;
-	margin-left: -23px;
+	margin-left: -16px;
 	background-color: black;
 	position: absolute;
 	transform: rotate(45deg);
@@ -879,11 +879,11 @@ h3 {
 
 .arrow:after {
 	content: ' ';
-	width: 20px;
+	width: 12px;
 	height: 2px;
 	background-color: black;
 	position: absolute;
-	right: -11px;
+	right: -4px;
 	transform: rotate(-45deg);
 }
 
