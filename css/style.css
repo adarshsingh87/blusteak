@@ -833,7 +833,8 @@ h3 {
 	.blog-container {
 		width: 90%;
 	}
-	.blog-container img, .sub-img {
+	.blog-container img,
+	.sub-img {
 		width: 100%;
 		margin: 20px 0;
 	}
@@ -1021,6 +1022,12 @@ h3 {
 	cursor: pointer;
 }
 
+.blog-iframe {
+	width: 50vw;
+	height: calc(50vw * 9 / 16);
+	margin: 50px 0;
+}
+
 @media screen and (max-width: 960px) {
 	.blogs-cards-container {
 		width: 90%;
@@ -1048,5 +1055,10 @@ h3 {
 		font-size: 16px;
 		padding: 10px 20px;
 		margin: 20px 10px;
+	}
+	.blog-iframe {
+		width: 90vw;
+		height: calc(90vw * 9 / 16);
+		margin: 20px 0;
 	}
 }
