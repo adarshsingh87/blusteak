@@ -1062,3 +1062,13 @@ h3 {
 		margin: 20px 0;
 	}
 }
+
+.instagram-iframe {
+	margin: 30px auto;
+	height: 600px;
+	overflow-y: scroll;
+}
+
+.instagram-media {
+	margin: 0 auto !important;
+}
