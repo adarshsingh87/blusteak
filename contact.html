@@ -69,16 +69,10 @@
 				<div class="form">
 					<div class="name-part">
 						<div class="fname">
-							<div class="input-heading">your Name</div>
-							<input type="text" placeholder="John" required id="fname" />
+							<div class="input-heading">Your Name</div>
+							<input type="text" placeholder="John" required id="name" />
 						</div>
 						<div class="lname">
-							<div class="input-heading">Last Name</div>
-							<input type="text" placeholder="Doer" required id="lname" />
-						</div>
-					</div>
-					<div class="name-part">
-						<div class="fname">
 							<div class="input-heading">Phone Number</div>
 							<input
 								type="text"
@@ -87,7 +81,9 @@
 								id="phnumber"
 							/>
 						</div>
-						<div class="lname">
+					</div>
+					<div class="name-part">
+						<div class="fname">
 							<div class="input-heading">Email address</div>
 							<input
 								type="email"
@@ -95,6 +91,40 @@
 								required
 								id="email"
 							/>
+						</div>
+						<div class="lname">
+							<div class="input-heading">Your Position</div>
+							<select name="position" id="position">
+								<option value="not selected">Select your position</option>
+								<option value="CEO/Co-founder/Director">CEO/Co-founder/Director</option>
+								<option value="Senior Exective/General Manager">Senior Exective/General Manager</option>
+								<option value="Marketing Executive">Marketing Executive</option>
+								<option value="Others">Others</option>
+							</select>
+						</div>
+					</div>
+					<div class="name-part">
+						<div class="fname">
+							<div class="input-heading">Budget per month</div>
+							<select name="budget" id="budget">
+								<option value="not selected">Select your budget</option>
+								<option value=" > Rs70,000"> > Rs 70,000</option>
+								<option value="> Rs200,000"> > Rs 200,000</option>
+								<option value="Rs 500,000"> Rs 500,000</option>
+							</select>
+						</div>
+						<div class="lname">
+							<div class="input-heading">How did you find us</div>
+							<select name="position" id="position">
+								<option value="not selected">Select your option</option>
+								<option value="Google Search">Google Search</option>
+								<option value="Instagram">Instagram</option>
+								<option value="Linkedin">Linkedin</option>
+								<option value="Youtube">Youtube</option>
+								<option value="Recommendation/ Word of mouth">Recommendation/ Word of mouth</option>
+								<option value="Blog">Blog</option>
+								<option value="Others">Others</option>
+							</select>
 						</div>
 					</div>
 					<div class="input-heading">Message</div>
@@ -124,11 +154,11 @@
 						</div>
 						<div
 							class="top-info-block"
-							onclick="location.href = 'mailto:sales@rainmakerba.com'"
+							onclick="location.href = 'mailto:info@blusteak.com'"
 							style="cursor: pointer"
 						>
 							<img src="./assets/mail.svg" alt="" />
-							<div>sales@rainmakerba.com</div>
+							<div>info@blusteak.com</div>
 						</div>
 					</div>
 				</div>

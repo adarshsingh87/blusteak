@@ -1113,7 +1113,7 @@ h3 {
 	box-sizing: border-box;
 }
 
-input {
+input, select, option {
 	border: none;
 	width: 100%;
 	font-size: 16px;
