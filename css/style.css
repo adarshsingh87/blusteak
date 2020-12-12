@@ -221,6 +221,10 @@ nav {
 	max-width: 805px;
 }
 
+.heading2 {
+	font-size: 72px;
+}
+
 .headingv1 {
 	font-size: 40px;
 }
@@ -1099,7 +1103,7 @@ h3 {
 
 .side-info {
 	width: 40%;
-	background: linear-gradient(63.99deg, #533966 1.17%, #2D3E96 91.59%);
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	padding: 60px;
 	border-radius: 0px 16px 16px 0px;
 	box-sizing: border-box;
@@ -1113,7 +1117,9 @@ h3 {
 	box-sizing: border-box;
 }
 
-input, select, option {
+input,
+select,
+option {
 	border: none;
 	width: 100%;
 	font-size: 16px;
@@ -1152,7 +1158,7 @@ input, select, option {
 	border-radius: 32px;
 	margin-top: 40px;
 	align-self: center;
-	background: linear-gradient(63.99deg, #533966 1.17%, #2D3E96 91.59%);
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	color: white;
 	border: none;
 	cursor: pointer;
@@ -1213,4 +1219,8 @@ input, select, option {
 	.lname {
 		margin: 20px 0;
 	}
+}
+
+.image-hover img:hover {
+	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.16);
 }
