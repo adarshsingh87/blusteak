@@ -157,3 +157,31 @@ function startCounter() {
         });
     }
 }
+
+// ! form submit
+
+function submmitit() {
+	var xhttp = new XMLHttpRequest()
+	var formDataPair = []
+	var formData = ''
+	formDataPair.push('name' + '=' + document.getElementById('name').value)
+	formDataPair.push('email' + '=' + document.getElementById('email').value)
+	formDataPair.push(
+		'phone' + '=' + document.getElementById('phnumber').value
+	)
+	formDataPair.push('position' + '=' + document.getElementById('position').value)
+	formDataPair.push('budget' + '=' + document.getElementById('budget').value)
+	formDataPair.push('enquiry' + '=' + document.getElementById('enquiry').value)
+	formDataPair.push('message' + '=' + document.getElementById('message').value)
+	formDataPair.push('found' + '=' + document.getElementById('found').value)
+	formData = formDataPair.join('&').replace(/%20/g, '+')
+	xhttp.open('POST', 'http://mail.blusteak.com/send.php')
+	xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+	xhttp.send( formData )
+	console.log(formData)
+	console.log('submitted')
+	document.querySelector('.form-submit-btn').innerHTML = 'Submitted'
+	setTimeout(() => {
+		window.location.reload()
+	}, 1000)
+}
