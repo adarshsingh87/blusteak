@@ -181,7 +181,4 @@ function submmitit() {
 	console.log(formData)
 	console.log('submitted')
 	document.querySelector('.form-submit-btn').innerHTML = 'Submitted'
-	setTimeout(() => {
-		window.location.reload()
-	}, 1000)
 }

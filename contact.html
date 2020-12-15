@@ -38,7 +38,7 @@
 					<a href="/">blusteak</a>
 				</div>
 				<ul class="nav-links">
-					<li><a href="./people.html" id="link-splash">About Us</a></li>
+					<li><a href="./people.html" id="link-splash">People</a></li>
 					<li><a href="./clients.html" id="link-splash">Clients</a></li>
 					<li><a href="./services.html" id="link-services">Services</a></li>
 					<li>
@@ -64,90 +64,91 @@
 		<div class="container">
 			<div class="form-cont">
 				<div class="form">
-					<div class="name-part">
-						<div class="fname">
-							<div class="input-heading">Your Name</div>
-							<input type="text" placeholder="John" required id="name" />
+					<form>
+						<div class="name-part">
+							<div class="fname">
+								<div class="input-heading">Your Name</div>
+								<input type="text" placeholder="John" id="name" />
+							</div>
+							<div class="lname">
+								<div class="input-heading">Phone Number<sup>*</sup></div>
+								<input
+									type="text"
+									placeholder="+91 1234567890"
+									required
+									id="phnumber"
+								/>
+							</div>
 						</div>
-						<div class="lname">
-							<div class="input-heading">Phone Number</div>
-							<input
-								type="text"
-								placeholder="+91 1234567890"
-								required
-								id="phnumber"
-							/>
+						<div class="name-part">
+							<div class="fname">
+								<div class="input-heading">Email address</div>
+								<input
+									type="email"
+									placeholder="john@abc.com"
+									id="email"
+								/>
+							</div>
+							<div class="lname">
+								<div class="input-heading">Your Position<sup>*</sup></div>
+								<select name="position" id="position" required>
+									<option value="">Select your position</option>
+									<option value="CEO/Co-founder/Director">CEO/Co-founder/Director</option>
+									<option value="Senior Exective/General Manager">Senior Exective/General Manager</option>
+									<option value="Marketing Executive">Marketing Executive</option>
+									<option value="Others">Others</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="name-part">
-						<div class="fname">
-							<div class="input-heading">Email address</div>
-							<input
-								type="email"
-								placeholder="john@abc.com"
-								required
-								id="email"
-							/>
+						<div class="name-part">
+							<div class="fname">
+								<div class="input-heading">Budget per month</div>
+								<select name="budget" id="budget">
+									<option value="not selected">Select your budget</option>
+									<option value=" > Rs70,000"> > Rs 70,000</option>
+									<option value="> Rs200,000"> > Rs 200,000</option>
+									<option value="> Rs 500,000"> > Rs 500,000</option>
+								</select>
+							</div>
+							<div class="lname">
+								<div class="input-heading">How did you find us</div>
+								<select name="found" id="found">
+									<option value="not selected">Select your option</option>
+									<option value="Google Search">Google Search</option>
+									<option value="Instagram">Instagram</option>
+									<option value="Linkedin">Linkedin</option>
+									<option value="Youtube">Youtube</option>
+									<option value="Recommendation/ Word of mouth">Recommendation/ Word of mouth</option>
+									<option value="Blog">Blog</option>
+									<option value="Others">Others</option>
+								</select>
+							</div>
 						</div>
-						<div class="lname">
-							<div class="input-heading">Your Position</div>
-							<select name="position" id="position">
-								<option value="not selected">Select your position</option>
-								<option value="CEO/Co-founder/Director">CEO/Co-founder/Director</option>
-								<option value="Senior Exective/General Manager">Senior Exective/General Manager</option>
-								<option value="Marketing Executive">Marketing Executive</option>
-								<option value="Others">Others</option>
-							</select>
+						<div class="name-part">
+							<div class="fname">
+								<div class="input-heading">Enquiry on</div>
+								<select name="enquiry" id="enquiry">
+									<option value="not selected">Select your enquiry</option>
+									<option value="Full digital marketing activities">Full digital marketing activities</option>
+									<option value="SEO only">SEO only</option>
+									<option value="Social Media management Only">Social Media management Only</option>
+									<option value="Online reputation management">Online reputation management</option>
+									<option value="Influencer Marketing">Influencer Marketing</option>
+									<option value="Performance marketing">Performance marketing</option>
+									<option value="others">others</option>
+								</select>
+							</div>
+							<div class="lname">
+								<div class="input-heading">Message<sup>*</sup></div>
+								<textarea name="message" id="message" placeholder="Let us know how we can be helpful?" required></textarea>
+							</div>
 						</div>
-					</div>
-					<div class="name-part">
-						<div class="fname">
-							<div class="input-heading">Budget per month</div>
-							<select name="budget" id="budget">
-								<option value="not selected">Select your budget</option>
-								<option value=" > Rs70,000"> > Rs 70,000</option>
-								<option value="> Rs200,000"> > Rs 200,000</option>
-								<option value="Rs 500,000"> Rs 500,000</option>
-							</select>
+						<div class="center-btn">
+							<button class="form-submit-btn" onclick="submmitit()" type="submit">
+								SUBMIT
+							</button>
 						</div>
-						<div class="lname">
-							<div class="input-heading">How did you find us</div>
-							<select name="found" id="found">
-								<option value="not selected">Select your option</option>
-								<option value="Google Search">Google Search</option>
-								<option value="Instagram">Instagram</option>
-								<option value="Linkedin">Linkedin</option>
-								<option value="Youtube">Youtube</option>
-								<option value="Recommendation/ Word of mouth">Recommendation/ Word of mouth</option>
-								<option value="Blog">Blog</option>
-								<option value="Others">Others</option>
-							</select>
-						</div>
-					</div>
-					<div class="name-part">
-						<div class="fname">
-							<div class="input-heading">Enquiry on</div>
-							<select name="enquiry" id="enquiry">
-								<option value="not selected">Select your enquiry</option>
-								<option value="Full digital marketing activities">Full digital marketing activities</option>
-								<option value="SEO only">SEO only</option>
-								<option value="Social Media management Only">Social Media management Only</option>
-								<option value="Online reputation management">Online reputation management</option>
-								<option value="Influencer Marketing">Influencer Marketing</option>
-								<option value="Performance marketing">Performance marketing</option>
-								<option value="others">others</option>
-							</select>
-						</div>
-						<div class="lname">
-							<div class="input-heading">Message</div>
-							<textarea name="message" id="message" placeholder="Let us know how we can be helpful?"></textarea>
-						</div>
-					</div>
-					<div class="center-btn">
-						<button class="form-submit-btn" onclick="submmitit()" type="submit">
-							SUBMIT
-						</button>
-					</div>
+					</form>
 				</div>
 				<div class="side-info">
 					<div class="top-info">
