@@ -1261,3 +1261,8 @@ option {
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
+
+.red-cross {
+	max-width: 250px;
+	filter: saturate(0);
+}
