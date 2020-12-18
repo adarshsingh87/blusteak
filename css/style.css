@@ -612,28 +612,59 @@ h3 {
 
 .footer {
 	background: #112334;
-	padding: 60px 0;
+	padding: 76px 100px;
 	color: #fff;
-	text-align: center;
-}
-
-.footer-middle {
-	margin: 40px 0;
-}
-
-.footer-top {
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+}
+
+.socials {
+	margin: 35px 0;
 }
 
 .socials a {
 	margin: 0 7px;
 }
 
+.footer-right-phone {
+	margin-bottom: 4px;
+	display: flex;
+	align-content: center;
+}
+
+.footer-right-phone img {
+	margin-right: 15px;
+}
+
+.footer-right-address {
+	margin: 24px 0;
+}
+
+.footer-right-copyright {
+	color: #d6d6d6;
+}
+
+.footer-right-mail {
+	cursor: pointer;
+	display: flex;
+	align-content: center;
+}
+
+.footer-right-mail img{
+	margin-right: 15px;
+}
+
 @media screen and (max-width: 960px) {
-	.footer-top .logo a {
-		font-size: 24px;
+	.footer {
+		display: block;
+		text-align: center;
+		padding: 40px 30px;
+	}
+	.socials {
+		margin: 20px 0;
+	}
+	.footer-left {
+		margin-bottom: 20px;
 	}
 	.socials a {
 		margin: 0 2px;
@@ -829,8 +860,8 @@ h3 {
 }
 
 .gif {
-	margin: 50px 50%;
-	transform: translateX(-50%);
+	margin: 50px auto;
+	display: block;
 }
 
 @media screen and (max-width: 960px) {
@@ -1225,7 +1256,7 @@ option {
 	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.16);
 }
 
-.temp-btn{
+.temp-btn {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 40px;
