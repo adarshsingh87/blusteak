@@ -498,21 +498,28 @@ h3 {
 	margin: 60px 0;
 }
 
-@media screen and (max-width: 960px) {
-	.clients {
-		display: block;
-	}
-	.clients .image-container {
-		margin: 30px;
-	}
+.clients .image-hover {
+	width: 250px;
+	height: 200px;
+	display: flex;
+}
+
+.clients .image-hover img {
+	display: block;
+	justify-self: center;
+	align-self: center;
+	margin: 0 auto;
 }
 
 .image-container {
 	min-width: 140px;
 	margin: 10px;
+	display: flex;
 }
 .image-container img {
 	display: block;
+	justify-self: center;
+	align-self: center;
 	margin: 0 auto;
 }
 
@@ -1267,7 +1274,7 @@ option {
 	}
 }
 
-.image-hover img:hover {
+.image-hover:hover {
 	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.16);
 }
 
