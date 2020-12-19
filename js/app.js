@@ -42,7 +42,7 @@ jQuery(function ($) {
 
 	$win
 		.on('scroll', function () {
-			if ($(this).scrollTop() > winH * 0.1) {
+			if ($(this).scrollTop() > winH * 0.01) {
 				$nav.addClass('doch')
 			} else {
 				$nav.removeClass('doch')

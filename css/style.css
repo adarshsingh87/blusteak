@@ -498,11 +498,22 @@ h3 {
 	margin: 60px 0;
 }
 
+@media screen and (max-width: 960px) {
+	.clients {
+		display: block;
+	}
+	.clients .image-container {
+		margin: 30px;
+	}
+}
+
 .image-container {
 	min-width: 140px;
-	display: flex;
-	align-items: center;
 	margin: 10px;
+}
+.image-container img {
+	display: block;
+	margin: 0 auto;
 }
 
 .sec-carousel-content {
@@ -627,9 +638,9 @@ h3 {
 }
 
 .footer-right-phone {
-	margin-bottom: 4px;
 	display: flex;
 	align-content: center;
+	margin-bottom: 4px;
 }
 
 .footer-right-phone img {
@@ -645,12 +656,12 @@ h3 {
 }
 
 .footer-right-mail {
-	cursor: pointer;
 	display: flex;
 	align-content: center;
+	cursor: pointer;
 }
 
-.footer-right-mail img{
+.footer-right-mail img {
 	margin-right: 15px;
 }
 
@@ -671,6 +682,10 @@ h3 {
 	}
 	.socials a img {
 		max-height: 29px;
+	}
+	.footer-right-mail,
+	.footer-right-phone {
+		justify-content: center;
 	}
 }
 
