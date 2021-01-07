@@ -186,7 +186,7 @@ function submmitit() {
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 35,
       "density": {
         "enable": true,
         "value_area": 1000
@@ -231,7 +231,7 @@ particlesJS("particles-js", {
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 1.5,
       "direction": "none",
       "random": false,
       "straight": false,
