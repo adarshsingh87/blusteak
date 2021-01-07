@@ -29,6 +29,11 @@ a {
 	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 }
 
+.doch .nav-links a,
+.blog-doch .nav-links a {
+	color: #fff !important;
+}
+
 .text-accent {
 	/* color: #373d8a; */
 	background: -webkit-linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
@@ -75,18 +80,18 @@ nav {
 .nav-links a {
 	text-decoration: none;
 	font-size: 15px;
-	color: #fff;
+	color: #000;
 }
 
 .nav-links a:hover {
 	text-decoration: none;
 	font-size: 15px;
-	color: #fff;
+	color: #000;
 }
 
 .logo a:hover {
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 /* ! burger */
@@ -98,7 +103,7 @@ nav {
 .line1 {
 	width: 20px;
 	height: 3px;
-	background-color: #fff;
+	background-color: #000;
 	margin: 2.5px;
 	transition: all 0.3s ease;
 }
@@ -106,7 +111,7 @@ nav {
 .line2 {
 	width: 14px;
 	height: 3px;
-	background-color: #fff;
+	background-color: #000;
 	float: right;
 	margin: 2.5px;
 	transition: all 0.3s ease;
@@ -134,6 +139,10 @@ nav {
 	}
 	.nav-links li {
 		opacity: 0;
+		color: #ffffff;
+	}
+	.nav-links a {
+		color: #ffffff;
 	}
 	.burger {
 		display: block;
@@ -149,11 +158,11 @@ nav {
 }
 
 .contact-us {
-	background-color: #fff;
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	padding: 10px 25px;
 	box-sizing: border-box;
 	border-radius: 20px;
-	color: #273d95 !important;
+	color: #fff !important;
 }
 
 @keyframes navLinkFade {
@@ -180,16 +189,24 @@ nav {
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 42px;
-	color: #ffffff;
 	text-decoration: none;
+}
+
+#particles-js {
+	z-index: -1;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: 80vh;
 }
 
 /* ! hero section */
 .hero-section {
-	background-image: url('../assets/hero-bg.svg');
-	background-repeat: no-repeat;
-	background-size: cover, 80vh;
-	background-position: bottom;
+	position: absolute;
+	/* background-image: url('../assets/hero-bg.svg'); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover, 80vh; */
+	/* background-position: bottom; */
 	height: 80vh;
 	display: flex;
 	align-content: center;
@@ -240,7 +257,6 @@ nav {
 	line-height: 140%;
 	text-align: center;
 	letter-spacing: 0.2px;
-	color: #ffffff;
 	margin: 30px 0;
 	max-width: 823px;
 }
