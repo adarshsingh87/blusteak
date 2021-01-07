@@ -202,11 +202,6 @@ nav {
 	height: 80vh;
 }
 
-.particles-js-canvas-el {
-	position: fixed;
-	z-index: -1;
-}
-
 /* ! hero section */
 .hero-section {
 	position: absolute;
@@ -454,7 +449,7 @@ p {
 }
 
 .videosection-container {
-	/* background: #f7f7f7; */
+	background: #f7f7f7;
 	padding: 40px 0;
 }
 
