@@ -26,12 +26,7 @@ a {
 
 .doch,
 .blog-doch {
-	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
-}
-
-.doch .nav-links a,
-.blog-doch .nav-links a {
-	color: #fff !important;
+	background: #fff;
 }
 
 .text-accent {
@@ -86,11 +81,6 @@ nav {
 .nav-links a:hover {
 	text-decoration: none;
 	font-size: 15px;
-	color: #000;
-}
-
-.logo a:hover {
-	text-decoration: none;
 	color: #000;
 }
 
@@ -190,6 +180,18 @@ nav {
 	font-size: 36px;
 	line-height: 42px;
 	text-decoration: none;
+	background: -webkit-linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.footer-left .logo a {
+	background: #fff;
+	color: #fff !important;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #particles-js {
@@ -198,6 +200,11 @@ nav {
 	justify-content: center;
 	align-content: center;
 	height: 80vh;
+}
+
+.particles-js-canvas-el {
+	position: fixed;
+	z-index: -1;
 }
 
 /* ! hero section */
@@ -447,7 +454,7 @@ p {
 }
 
 .videosection-container {
-	background: #f7f7f7;
+	/* background: #f7f7f7; */
 	padding: 40px 0;
 }
 
@@ -995,6 +1002,7 @@ h3 {
 }
 
 .accordian-container {
+	background-color: #fff;
 	list-style-type: none;
 	padding: 0;
 	margin: 32px 0;
