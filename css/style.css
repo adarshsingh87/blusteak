@@ -650,10 +650,18 @@ h3 {
 
 .footer {
 	background: #112334;
-	padding: 76px 100px;
+	padding: 76px;
+	padding-left: calc(100vw/2 - 1100px/2);
+	padding-right: calc(100vw/2 - 1100px/2);
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+	.footer {
+		padding: 76px 100px;
+	}
 }
 
 .socials {
