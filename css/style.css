@@ -1317,3 +1317,35 @@ option {
 	max-width: 250px;
 	filter: saturate(0);
 }
+
+.extra-blogs {
+	width: 95%;
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 25px auto;
+}
+
+.extra-blog-card {
+	max-width: 30%;
+	min-width: 250px;
+	margin: 25px auto;
+}
+
+#first-blog-card-img, #first-blog-card-img2, #first-blog-card-img3 {
+	width: 100%;
+	min-width: 250px;
+}
+
+#first-blog-card-title, #first-blog-card-title2, #first-blog-card-title3 {
+	box-sizing: border-box;
+	padding: 20px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+#first-blog-card-title:hover, #first-blog-card-title2:hover, #first-blog-card-title3:hover {
+	color: blue;
+}
