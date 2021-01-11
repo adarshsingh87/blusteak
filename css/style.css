@@ -518,6 +518,11 @@ h3 {
 	margin: 60px 0;
 }
 
+.clients a {
+	width: 33.33%;
+	min-width: 300px;
+}
+
 .clients .image-hover {
 	width: 250px;
 	height: 200px;
