@@ -31,6 +31,7 @@ a {
 
 .text-accent {
 	/* color: #373d8a; */
+	-webkit-box-decoration-break: clone;
 	background: -webkit-linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -656,8 +657,8 @@ h3 {
 .footer {
 	background: #112334;
 	padding: 76px;
-	padding-left: calc(100vw/2 - 1100px/2);
-	padding-right: calc(100vw/2 - 1100px/2);
+	padding-left: calc(100vw / 2 - 1100px / 2);
+	padding-right: calc(100vw / 2 - 1100px / 2);
 	color: #fff;
 	display: flex;
 	justify-content: space-between;
@@ -1338,12 +1339,16 @@ option {
 	margin: 25px auto;
 }
 
-#first-blog-card-img, #first-blog-card-img2, #first-blog-card-img3 {
+#first-blog-card-img,
+#first-blog-card-img2,
+#first-blog-card-img3 {
 	width: 100%;
 	min-width: 250px;
 }
 
-#first-blog-card-title, #first-blog-card-title2, #first-blog-card-title3 {
+#first-blog-card-title,
+#first-blog-card-title2,
+#first-blog-card-title3 {
 	box-sizing: border-box;
 	padding: 20px;
 	text-decoration: none;
@@ -1351,6 +1356,8 @@ option {
 	text-align: center;
 }
 
-#first-blog-card-title:hover, #first-blog-card-title2:hover, #first-blog-card-title3:hover {
+#first-blog-card-title:hover,
+#first-blog-card-title2:hover,
+#first-blog-card-title3:hover {
 	color: blue;
 }
