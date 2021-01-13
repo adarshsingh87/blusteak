@@ -29,6 +29,11 @@ a {
 	background: #fff;
 }
 
+.video {
+	display: block;
+	margin: 0 auto !important;
+}
+
 .text-accent {
 	/* color: #373d8a; */
 	-webkit-box-decoration-break: clone;
@@ -223,6 +228,7 @@ nav {
 }
 
 .hero-section-content {
+	margin-top: 50px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
