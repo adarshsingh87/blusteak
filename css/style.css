@@ -245,6 +245,7 @@ nav {
 	text-align: center;
 	color: #ffffff;
 	max-width: 805px;
+	margin-top: 20px;
 }
 
 .heading2 {
@@ -294,15 +295,27 @@ nav {
 	.heading {
 		font-size: 38px;
 		line-height: 140%;
+		box-sizing: border-box;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
 	}
 	.headingv1 {
 		font-size: 19px;
+		box-sizing: border-box;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
 	}
 	.headingv2 {
 		font-size: 28px;
+		box-sizing: border-box;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
 	}
 	.description {
+		box-sizing: border-box;
 		font-size: 20px;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
 	}
 	.hero-btn {
 		font-size: 18px;
@@ -416,9 +429,19 @@ p {
 	cursor: pointer;
 }
 
+.hmm {
+	margin-top: 5vh;
+}
+
 @media screen and (max-width: 960px) {
 	.container {
 		width: 90%;
+	}
+	.hmm {
+		margin-top: 20vh;
+	}
+	.hmm2 {
+		margin-top: 10vh;
 	}
 	.block-heading {
 		font-size: 26px;
