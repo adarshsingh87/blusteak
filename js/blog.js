@@ -1,14 +1,18 @@
 
 // blog card data
 
-document.getElementById('first-blog-card-img').src = '../assets/blogs/blog29-1.webp'
-document.getElementById('first-blog-card-title').innerHTML = '<div>How Small Businesses Can Take Advantage of Instagram Reels?</div>'
-document.getElementById('first-blog-card-title').href = './how-small-businesses-can-take-advantage-of-instagram-reels.html'
+const blogIMG = ['../assets/blogs/discord-dp.jpeg', '../assets/blogs/blog29-1.webp', '../assets/blogs/blog1-1.webp']
+const blogTitle = ['<div>How to Use Discord to Market Your Business?</div>', '<div>How Small Businesses Can Take Advantage of Instagram Reels?</div>', '<div>Is the organic reach of LinkedIn going down? – Here’s the proof</div>']
+const blogLink = ['./how-to-use-discord-to-market-your-business.html','./how-small-businesses-can-take-advantage-of-instagram-reels.html','./is-the-organic-reach-of-linkedin-going-down-here-s-the-proof.html']
 
-document.getElementById('first-blog-card-img2').src = '../assets/blogs/blog1-1.webp'
-document.getElementById('first-blog-card-title2').innerHTML = '<div>Is the organic reach of LinkedIn going down? – Here’s the proof</div>'
-document.getElementById('first-blog-card-title2').href = './is-the-organic-reach-of-linkedin-going-down-here-s-the-proof.html'
+document.getElementById('first-blog-card-img').src = blogIMG[0]
+document.getElementById('first-blog-card-title').innerHTML = blogTitle[0]
+document.getElementById('first-blog-card-title').href = blogLink[0]
 
-document.getElementById('first-blog-card-img3').src = '../assets/blogs/blog2-1.webp'
-document.getElementById('first-blog-card-title3').innerHTML = '<div>4 Tips on How to Use Giphy to Grow Your Brand or Business</div>'
-document.getElementById('first-blog-card-title3').href = './how-use-giphy-to-grow-your-brand-or-business.html'
+document.getElementById('first-blog-card-img2').src = blogIMG[1]
+document.getElementById('first-blog-card-title2').innerHTML = blogTitle[1]
+document.getElementById('first-blog-card-title2').href = blogLink[1]
+
+document.getElementById('first-blog-card-img3').src = blogIMG[2]
+document.getElementById('first-blog-card-title3').innerHTML = blogTitle[2]
+document.getElementById('first-blog-card-title3').href = blogLink[2]
