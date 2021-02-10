@@ -72,7 +72,7 @@ $('.pri-carousel').owlCarousel({
 			items: 2,
 		},
 		960: {
-			items: 3,
+			items: 2,
 		},
 	},
 })
