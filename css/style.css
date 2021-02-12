@@ -668,7 +668,7 @@ h3 {
 
 @media screen and (max-width: 960px) {
 	.stats-heading {
-		font-size: 60px;
+		font-size: 52px;
 	}
 	.stats-info {
 		font-size: 20px;
@@ -677,7 +677,7 @@ h3 {
 
 @media screen and (max-width: 500px) {
 	.stats-heading {
-		font-size: 48px;
+		font-size: 38px;
 	}
 	.stats-info {
 		font-size: 14px;
@@ -921,6 +921,15 @@ h3 {
 	margin-bottom: 6vh;
 }
 
+.case-study-container{
+	margin-top: 0 !important;
+}
+
+.case-study-container-img {
+	margin-top: 10vh;
+	max-width: 100vw;
+}
+
 .blog-container img {
 	width: 100%;
 	height: auto;
@@ -953,6 +962,10 @@ h3 {
 @media screen and (max-width: 960px) {
 	.blog-container {
 		width: 90%;
+	}
+	.case-study-container-img {
+		transform: scale(1.5);
+		margin-bottom: 10px;
 	}
 	.blog-container img,
 	.sub-img {
