@@ -442,9 +442,6 @@ p {
 	.hmm {
 		margin-top: 250px;
 	}
-	.hmm2 {
-		margin-top: 150px;
-	}
 	.block-heading {
 		font-size: 26px;
 	}
@@ -471,6 +468,12 @@ p {
 	.case-study-card-btn {
 		font-size: 12px;
 		padding: 6px 20px;
+	}
+}
+
+@media screen and (max-height: 660px){
+	.hmm2 {
+		margin-top: 155px;
 	}
 }
 
@@ -680,15 +683,12 @@ h3 {
 		font-size: 72px;
 	}
 }
-/* 
-@media screen and (max-width: 500px) {
-	.stats-heading {
-		font-size: 38px;
+
+@media screen and (max-width: 390px) {
+	.block-heading {
+		font-size: 20px;
 	}
-	.stats-info {
-		font-size: 14px;
-	}
-} */
+}
 
 .footer {
 	background: #112334;
