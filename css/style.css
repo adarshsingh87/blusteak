@@ -473,6 +473,12 @@ p {
 
 @media screen and (max-height: 660px){
 	.hmm2 {
+		margin-top: 100px;
+	}
+}
+
+@media screen and (max-height: 500px){
+	.hmm2 {
 		margin-top: 155px;
 	}
 }
