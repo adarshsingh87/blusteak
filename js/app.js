@@ -1,3 +1,5 @@
+document.querySelector('.year').innerHTML = new Date().getFullYear();
+
 // ! navbar
 const navSlide = () => {
 	const burger = document.querySelector('.burger')
