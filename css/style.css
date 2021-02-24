@@ -939,7 +939,7 @@ h3 {
 
 .case-study-container-img {
 	margin-top: 10vh;
-	width: 100vw;
+	/* width: 100vw; */
 	background: url('../assets/WhatsApp Image 2021-02-14 at 3.47.47 PM.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
