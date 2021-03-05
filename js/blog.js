@@ -1,9 +1,21 @@
 
 // blog card data
 
-const blogIMG = ['../assets/blogs/discord-dp.jpeg', '../assets/blogs/blog29-1.webp', '../assets/blogs/blog1-1.webp']
-const blogTitle = ['<div>How to Use Discord to Market Your Business?</div>', '<div>How Small Businesses Can Take Advantage of Instagram Reels?</div>', '<div>Is the organic reach of LinkedIn going down? – Here’s the proof</div>']
-const blogLink = ['./how-to-use-discord-to-market-your-business.html','./how-small-businesses-can-take-advantage-of-instagram-reels.html','./is-the-organic-reach-of-linkedin-going-down-here-s-the-proof.html']
+const blogIMG = [
+  '../assets/blogs/01.jpg',
+  '../assets/blogs/discord-dp.jpeg',
+  '../assets/blogs/blog29-1.webp',
+]
+const blogTitle = [
+  '<div>Is Twitter Spaces the Clubhouse for Android?</div>',
+  '<div>How to Use Discord to Market Your Business?</div>',
+  '<div>How Small Businesses Can Take Advantage of Instagram Reels?</div>',
+]
+const blogLink = [
+  './Is-Twitter-Spaces-the-Clubhouse-for-Android.html',
+  './how-to-use-discord-to-market-your-business.html',
+  './how-small-businesses-can-take-advantage-of-instagram-reels.html',
+]
 
 document.getElementById('first-blog-card-img').src = blogIMG[0]
 document.getElementById('first-blog-card-title').innerHTML = blogTitle[0]
