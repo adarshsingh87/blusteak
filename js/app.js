@@ -61,6 +61,8 @@ $('.pri-carousel').owlCarousel({
 	stagePadding: 15,
 	margin: 10,
 	nav: true,
+	autoplay:true,
+  autoplayTimeout:2000,
 	navText: [
 		'<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>',
 		'<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>',
@@ -83,11 +85,13 @@ $('.sec-carousel').owlCarousel({
 	stagePadding: 15,
 	margin: 10,
 	nav: true,
+	autoplay:true,
+  autoplayTimeout:2000,
 	navText: [
 		'<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>',
 		'<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>',
 	],
-	// loop: true,
+	loop: true,
 	responsive: {
 		0: {
 			items: 1,

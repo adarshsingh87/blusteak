@@ -654,8 +654,8 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	margin: 10px;
-	/* min-width: 140px; */
 	width: 250px;
+	height: 180px;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -940,7 +940,7 @@ h3 {
 .case-study-container-img {
 	margin-top: 10vh;
 	/* width: 100vw; */
-	background: url('../assets/WhatsApp Image 2021-02-14 at 3.47.47 PM.jpeg');
+	background: url('../assets/Case Study.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1422,4 +1422,20 @@ option {
 #first-blog-card-title2:hover,
 #first-blog-card-title3:hover {
 	color: blue;
+}
+
+.footer-middle-middle {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.middle-heading {
+	font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
 }
