@@ -1382,7 +1382,7 @@ option {
 }
 
 .red-cross {
-	max-width: 250px;
+	max-width: 220px;
 	filter: saturate(0);
 }
 
