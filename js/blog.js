@@ -2,19 +2,19 @@
 // blog card data
 
 const blogIMG = [
+  '../assets/case-studies/WhatsApp Image 2021-04-01 at 4.24.29 PM.jpeg',
   '../assets/blogs/01.jpg',
   '../assets/blogs/discord-dp.jpeg',
-  '../assets/blogs/blog29-1.webp',
 ]
 const blogTitle = [
+  '<div>[Case Study] WhatsApp vs Telegram: for Business Marketing</div>',
   '<div>Is Twitter Spaces the Clubhouse for Android?</div>',
   '<div>How to Use Discord to Market Your Business?</div>',
-  '<div>How Small Businesses Can Take Advantage of Instagram Reels?</div>',
 ]
 const blogLink = [
+  './whatsapp-v-telegram.html',
   './Is-Twitter-Spaces-the-Clubhouse-for-Android.html',
   './how-to-use-discord-to-market-your-business.html',
-  './how-small-businesses-can-take-advantage-of-instagram-reels.html',
 ]
 
 document.getElementById('first-blog-card-img').src = blogIMG[0]
