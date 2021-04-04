@@ -1384,6 +1384,7 @@ option {
 .red-cross {
 	max-width: 220px;
 	filter: saturate(0);
+	margin: 0 15px;
 }
 
 .extra-blogs {
@@ -1484,4 +1485,24 @@ option {
 		display: block;
 		margin: 30px auto !important;
 	}
+}
+
+.marquee-animation {
+	overflow: hidden;
+	display: flex;
+}
+
+.marquee-animation-div {
+	display: flex;
+	animation: marquee 15s linear infinite;
+	justify-content: space-around;
+}
+
+.marquee-animation:hover .marquee-animation-div {
+	animation-play-state: paused;
+}
+
+@keyframes marquee {
+	0%   { transform: translateX(0%); }
+	100% { transform: translateX(-100%); }
 }
