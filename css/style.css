@@ -389,6 +389,7 @@ p {
 
 .case-study-card {
 	padding: 0 20px;
+	cursor: pointer;
 }
 
 .case-study-card-image {
