@@ -979,6 +979,7 @@ h3 {
 .sub-heading-big {
 	font-size: 30px;
 	font-weight: normal !important;
+	line-height: 60px;
 }
 
 .gif {
