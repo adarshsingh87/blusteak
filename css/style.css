@@ -1513,8 +1513,25 @@ option {
 }
 
 @keyframes marquee {
-	0%   { transform: translateX(0%); }
-	100% { transform: translateX(-100%); }
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.lilili {
+	margin: 10px 0;
+	font-weight: 300;
+	font-size: 18px;
+}
+
+.lilili::before {
+	display: inline-block;
+	content: '-';
+	width: 1em;
+	margin-left: -1em;
 }
 
 /* made by @adarshsingh87 */
