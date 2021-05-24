@@ -2,19 +2,19 @@
 // blog card data
 
 const blogIMG = [
+  '../assets/blogs/instaThumbnail.jpeg',
   '../assets/blogs/quora-thumb.jpeg',
   '../assets/case-studies/WhatsApp Image 2021-04-01 at 4.24.29 PM.jpeg',
-  '../assets/blogs/01.jpg',
 ]
 const blogTitle = [
+  '<div>Proven Method to Organically Increase Reach and Profile Visits on Instagram</div>',
   '<div>How to Use Quora Ads to Promote Your Business?</div>',
   '<div>[Case Study] WhatsApp vs Telegram: for Business Marketing</div>',
-  '<div>Is Twitter Spaces the Clubhouse for Android?</div>',
 ]
 const blogLink = [
+  './Proven-Method-to-Organically-Increase-Reach-and-Profile-Visits-on-Instagram.html',
   './How-to-Use-Quora-Ads-to-Promote-Your-Business.html',
   './whatsapp-v-telegram.html',
-  './Is-Twitter-Spaces-the-Clubhouse-for-Android.html',
 ]
 
 document.getElementById('first-blog-card-img').src = blogIMG[0]
