@@ -30,3 +30,5 @@ document.getElementById('first-blog-card-title3').innerHTML = blogTitle[2]
 document.getElementById('first-blog-card-title3').href = blogLink[2]
 
 // made by @adarshsingh87
+
+document.querySelector('.btn').click()
