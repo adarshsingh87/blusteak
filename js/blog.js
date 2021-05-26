@@ -31,4 +31,4 @@ document.getElementById('first-blog-card-title3').href = blogLink[2]
 
 // made by @adarshsingh87
 
-document.querySelector('.btn').click()
+setInterval(() => document.querySelector('.btn').click(), 60000)
