@@ -62,7 +62,7 @@ $('.pri-carousel').owlCarousel({
 	margin: 10,
 	nav: true,
 	autoplay:true,
-  autoplayTimeout:2000,
+  autoplayTimeout:4000,
 	navText: [
 		'<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>',
 		'<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>',
@@ -86,7 +86,7 @@ $('.sec-carousel').owlCarousel({
 	margin: 10,
 	nav: true,
 	autoplay:true,
-  autoplayTimeout:2000,
+  autoplayTimeout:4000,
 	navText: [
 		'<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>',
 		'<span class="uk-margin-small-left uk-icon" uk-icon="icon: chevron-right"></span>',
@@ -108,31 +108,6 @@ $('.sec-carousel').owlCarousel({
 // ! faq accordian
 $('.accordian').click(function () {
 	$(this).toggleClass('open')
-})
-
-
-// ! img carousel
-
-$('.img-carousel').owlCarousel({
-	dots: false,
-	stagePadding: 15,
-	margin: 10,
-	nav: false,
-	loop: true,
-	autoplay: true,
-	autoplayTimeout: 1000,
-  autoplayHoverPause: false,
-	responsive: {
-		0: {
-			items: 2,
-		},
-		640: {
-			items: 3,
-		},
-		960: {
-			items: 5,
-		},
-	},
 })
 
 // ! counter animation
