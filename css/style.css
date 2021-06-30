@@ -1845,4 +1845,134 @@ option {
 	}
 }
 
+* {
+	box-sizing: border-box;
+}
+.success_msg {
+	text-align: center;
+	margin: 0 0 50px 0;
+	width: 100%;
+	background: #4fc64f;
+	padding: 10px 0;
+	border-radius: 3px;
+	color: #fff;
+}
+.qbt_open-button {
+	z-index: 999999;
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
+	color: #fff;
+	padding: 16px 20px;
+	font-weight: 700;
+	font-size: 14px;
+	border: none;
+	border-radius: 15px 15px 0 0;
+	cursor: pointer;
+	position: fixed;
+	bottom: 0;
+	right: 28px;
+	width: 280px;
+	text-align: left;
+}
+.qbt_form-popup {
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 15px;
+	border-left: 3px solid #533967;
+	border-top: none;
+	border-right: 3px solid #2d3e96;
+	z-index: 9;
+	border-radius: 15px 15px 0 0;
+}
+.qbt_form-container {
+	max-width: 300px;
+	padding: 10px;
+	background-color: #fff;
+}
+.qbt_form-container input[type='password'],
+.qbt_form-container input[type='text'],
+.qbt_form-container textarea {
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: #f1f1f1;
+	font-family: inherit;
+	font-size: 13px;
+}
+.qbt_form-container input[type='password']:focus,
+.qbt_form-container input[type='text']:focus,
+.qbt_form-container textarea:focus {
+	background-color: #ddd;
+	outline: 0;
+}
+.qbt_form-container .qbt_btn {
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
+	color: #fff;
+	padding: 18px 20px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	font-weight: 700;
+}
+.qbt_cancel {
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
+	color: #fff;
+	padding: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 10px 10px 0 0;
+	text-align: left;
+}
+.qbt_form-container .qbt_btn:hover,
+.qbt_open-button:hover {
+	opacity: 0.9;
+}
+.qbt_call-btn {
+	font-size: 16px;
+	padding: 15px 0;
+	color: #533967;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: 700;
+}
+.qbt_call-btn a {
+	color: #2d3e96;
+	text-decoration: none;
+}
+.qbt_call-mobile {
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
+	padding: 12px;
+	font-weight: 700;
+	font-size: 34px;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	position: fixed;
+	bottom: 28px;
+	right: 28px;
+	text-align: center;
+}
+.qbt_call-mobile a {
+	color: #fff;
+}
+@media screen and (max-width: 540px) {
+	.qbt_open-button {
+		display: none;
+	}
+}
+@media screen and (min-width: 540px) {
+	.qbt_call-mobile {
+		display: none;
+	}
+}
+
 /* made by @adarshsingh87 */
