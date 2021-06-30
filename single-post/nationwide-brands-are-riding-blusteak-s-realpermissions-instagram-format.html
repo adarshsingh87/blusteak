@@ -1371,6 +1371,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <script src="../js/blog.js"></script>
   <script src="../js/app.js"></script>
+	<div class="qbt_open-button" onclick="openForm()">Get in touch &#129309;<span style="float:right;"><i
+					class="fa fa-chevron-up"></i></span></div>
+		<div class="qbt_form-popup" id="myForm">
+			<div class="qbt_btn qbt_cancel" onclick="closeForm()">We'd love to talk to you &#128075;<span style="float:right;"><i
+						class="fa fa-chevron-down"></i></span></div>
+			<form action="/thank-you.php" class="qbt_form-container" method="post">
+				<input type="text" placeholder="Enter Phone*" name="phone" required>
+				<input type="text" placeholder="Enter Email*" name="email" required>
+				<textarea placeholder="Enter Message*" name="message" required></textarea>
+				<button type="submit" class="qbt_btn">Send</button>
+				<div class="qbt_call-btn"><a href="tel:+917736695526">Or call us now: +91 77366 95526</a></div>
+			</form>
+		</div>
+		<div class="qbt_call-mobile"><a href="tel:+917736695526"><i class="fa fa-phone"></i></a></div>
+		<script>
+			function openForm() {
+				document.getElementById( "myForm" ).style.display = "block";
+			}
+			function closeForm() {
+				document.getElementById( "myForm" ).style.display = "none";
+			}
+		</script>
 	</body>
 </html>
 <!-- made by @adarshsingh87 -->
