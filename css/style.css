@@ -46,6 +46,20 @@ a {
 	-webkit-text-fill-color: transparent;
 }
 
+.text-accent::selection {
+	color: white !important;
+	background-clip: unset;
+	box-decoration-break: unset;
+	-webkit-text-fill-color: white;
+}
+
+.text-accent::-moz-selection {
+	color: white !important;
+	background-clip: unset;
+	box-decoration-break: unset;
+	-webkit-text-fill-color: white;
+}
+
 .block-heading {
 	font-family: 'Fira Sans Condensed';
 	font-weight: 600;
@@ -193,6 +207,20 @@ nav {
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.logo a::selection {
+	color: white !important;
+	background-clip: unset;
+	box-decoration-break: unset;
+	-webkit-text-fill-color: white;
+}
+
+.logo a::-moz-selection {
+	color: white !important;
+	background-clip: unset;
+	box-decoration-break: unset;
+	-webkit-text-fill-color: white;
 }
 
 .footer-left .logo a {
