@@ -1543,7 +1543,8 @@ option {
 }
 
 .marquee-animation-div {
-	display: flex;
+	display: inline-flex;
+	gap: 20px;
 	animation: marquee 15s linear infinite;
 	justify-content: space-around;
 }
