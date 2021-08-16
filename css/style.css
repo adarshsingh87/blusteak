@@ -1639,8 +1639,6 @@ option {
 	border: 1px solid black;
 }
 
-
-
 * {
 	box-sizing: border-box;
 }
@@ -1669,7 +1667,7 @@ option {
 	right: 28px;
 	width: 280px;
 	text-align: left;
-	z-index:9;
+	z-index: 9;
 }
 
 .qbt_form-popup {
@@ -1681,17 +1679,17 @@ option {
 	border-top: none;
 	border-right: 3px solid #2d3e96;
 	z-index: 99;
-	border-radius: 15px 15px 0 0
+	border-radius: 15px 15px 0 0;
 }
 
 .qbt_form-container {
 	max-width: 300px;
 	padding: 10px;
-	background-color: #fff
+	background-color: #fff;
 }
 
-.qbt_form-container input[type=password],
-.qbt_form-container input[type=text],
+.qbt_form-container input[type='password'],
+.qbt_form-container input[type='text'],
 .qbt_form-container textarea {
 	width: 100%;
 	padding: 15px;
@@ -1699,14 +1697,14 @@ option {
 	border: none;
 	background: #f1f1f1;
 	font-family: inherit;
-	font-size: 13px
+	font-size: 13px;
 }
 
-.qbt_form-container input[type=password]:focus,
-.qbt_form-container input[type=text]:focus,
+.qbt_form-container input[type='password']:focus,
+.qbt_form-container input[type='text']:focus,
 .qbt_form-container textarea:focus {
 	background-color: #ddd;
-	outline: 0
+	outline: 0;
 }
 
 .qbt_form-container .qbt_btn {
@@ -1718,7 +1716,7 @@ option {
 	cursor: pointer;
 	width: 100%;
 	margin-bottom: 10px;
-	font-weight: 700
+	font-weight: 700;
 }
 
 .qbt_cancel {
@@ -1740,12 +1738,13 @@ option {
 	color: #533967;
 	vertical-align: middle;
 	text-align: center;
-	font-weight: 700
+	font-weight: 700;
 }
 
-.qbt_call-btn a, .qbt_call-btn a:hover {
+.qbt_call-btn a,
+.qbt_call-btn a:hover {
 	color: #2d3e96;
-	text-decoration: none
+	text-decoration: none;
 }
 
 .qbt_call-mobile {
@@ -1762,23 +1761,57 @@ option {
 	bottom: 28px;
 	right: 28px;
 	text-align: center;
-	z-index:99;
+	z-index: 99;
 }
 
-.qbt_call-mobile a, .qbt_call-mobile a:hover {
+.qbt_call-mobile a,
+.qbt_call-mobile a:hover {
 	color: #fff;
 }
 
-@media screen and (max-width:540px) {
+@media screen and (max-width: 540px) {
 	.qbt_open-button {
-		display: none
+		display: none;
 	}
 }
 
-@media screen and (min-width:540px) {
+@media screen and (min-width: 540px) {
 	.qbt_call-mobile {
-		display: none
+		display: none;
 	}
+}
+
+.btn-cont-clients {
+	display: inline-flex;
+	gap: 24px;
+	flex-wrap: wrap;
+	margin-top: 24px;
+}
+
+.tablinks {
+	padding: 15px 40px;
+	background-color: transparent;
+	border: 2px solid #2D3E96;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.tablink-cont {
+	font-family: 'Fira Sans';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.tab-active {
+	background: linear-gradient(63.99deg, #533966 1.17%, #2D3E96 91.59%);
+	color: white !important;
+}
+
+.tab-active .tablink-cont {
+	color: white !important;
+	-webkit-text-fill-color: unset !important;
 }
 
 /* made by @adarshsingh87 */
