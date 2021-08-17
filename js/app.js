@@ -79,6 +79,11 @@ if ( links[0] ) {
 	links[0].click()
 }
 
+function toggleClassFunc() {
+	var btnCont = document.getElementById('btn-cont-clients')
+	btnCont.classList.toggle('clients-btns')
+}
+
 // ! carousel
 $('.pri-carousel').owlCarousel({
 	stagePadding: 15,
