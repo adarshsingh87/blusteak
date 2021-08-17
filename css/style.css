@@ -639,50 +639,57 @@ h3 {
 }
 
 .sec-carousel-content {
-	padding: 30px;
+	padding: 13px 20px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	justify-content: space-between;
+	align-items: baseline;
+	box-sizing: border-box;
+	height: 565px;
 }
 
-.sec-carousel-content img {
-	border-radius: 50%;
-	max-width: 160px;
+.sm-card-testimonial {
+	height: 450px !important;
+}
+
+.quote-img {
+	width: 54px !important;
+	margin-bottom: 26px;
 }
 
 .client-quote {
-	margin: 40px 0;
+	margin-bottom: 60px;
 	font-family: 'Fira Sans';
 	font-style: italic;
 	font-weight: 300;
-	font-size: 22px;
+	font-size: 18px;
 	line-height: 140%;
-	text-align: center;
-	max-width: 1000px;
+	letter-spacing: 0.2px;
+	color: #000000;
 }
 
 .client-name {
 	font-family: 'Fira Sans';
+	font-style: normal;
 	font-weight: 600;
-	font-size: 32px;
-	line-height: 38px;
-	text-align: center;
-	color: #000;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	color: #000000;
 }
 
 .client-designation {
-	margin: 16px 0;
 	font-family: 'Fira Sans';
-	font-weight: 300;
-	font-size: 24px;
-	line-height: 29px;
-	text-align: center;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.2px;
+	color: #000000;
 }
 
-@media screen and (max-width: 1000px) {
-	.client-quote {
-		font-size: 14px;
-	}
+.client-img {
+	width: 64px !important;
+	height: 64px !important;
+	border-radius: 50%;
 }
 
 .growth-container {
@@ -1791,7 +1798,7 @@ option {
 .tablinks {
 	padding: 15px 40px;
 	background-color: transparent;
-	border: 2px solid #2D3E96;
+	border: 2px solid #2d3e96;
 	border-radius: 2px;
 	cursor: pointer;
 }
@@ -1805,7 +1812,7 @@ option {
 }
 
 .tab-active {
-	background: linear-gradient(63.99deg, #533966 1.17%, #2D3E96 91.59%);
+	background: linear-gradient(63.99deg, #533966 1.17%, #2d3e96 91.59%);
 	color: white !important;
 }
 

@@ -75,7 +75,9 @@ function openCity(evt, cityName) {
 // Get the element with id="defaultOpen" and click on it
 // document.getElementById("defaultOpen").click();
 const links = document.querySelectorAll('.tablinks')
-links[0].click()
+if ( links[0] ) {	
+	links[0].click()
+}
 
 // ! carousel
 $('.pri-carousel').owlCarousel({
@@ -106,7 +108,7 @@ $('.sec-carousel').owlCarousel({
 	stagePadding: 15,
 	margin: 10,
 	nav: true,
-	autoplay:true,
+	autoplay: true,
   autoplayTimeout:4000,
 	navText: [
 		'<span class="uk-margin-small-right uk-icon" uk-icon="icon: chevron-left"></span>',
@@ -118,10 +120,10 @@ $('.sec-carousel').owlCarousel({
 			items: 1,
 		},
 		640: {
-			items: 1,
+			items: 2,
 		},
 		960: {
-			items: 1,
+			items: 2,
 		},
 	},
 })
