@@ -645,11 +645,11 @@ h3 {
 	justify-content: space-between;
 	align-items: baseline;
 	box-sizing: border-box;
-	height: 565px;
+	min-height: 440px;
 }
 
 .sm-card-testimonial {
-	height: 450px !important;
+	min-height: 360px !important;
 }
 
 .quote-img {
@@ -1795,11 +1795,18 @@ option {
 }
 
 .tablinks {
-	padding: 15px 40px;
+	padding: 10px 25px;
 	background-color: transparent;
 	border: 2px solid #2d3e96;
 	border-radius: 2px;
 	cursor: pointer;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 960px) {
+	.tablinks {
+		white-space: pre-line;
+	}
 }
 
 .tablink-cont {
@@ -1824,6 +1831,10 @@ option {
 	flex-wrap: nowrap !important;
 	overflow: hidden !important;
 	max-width: 100% !important;
+}
+
+.clients-btns > .tablinks {
+	white-space: nowrap !important;
 }
 
 /* made by @adarshsingh87 */
