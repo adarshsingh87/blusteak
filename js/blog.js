@@ -2,19 +2,19 @@
 // blog card data
 
 const blogIMG = [
+  '../assets/blogs/Featured img - How to Advertise on Sharechat.png',
   '../assets/blogs/01 (4) (1).jpg',
   '../assets/blogs/instaThumbnail.jpeg',
-  '../assets/blogs/quora-thumb.jpeg',
 ]
 const blogTitle = [
+  '<div>How to Run Ads on ShareChat</div>',
   '<div>Should You Sell on Your Own Website or Amazon / Flipkart in India?</div>',
   '<div>Proven Method to Organically Increase Reach and Profile Visits on Instagram</div>',
-  '<div>How to Use Quora Ads to Promote Your Business?</div>',
 ]
 const blogLink = [
+  './How-to-Run-Ads-on-ShareChat.html',
   './Should-You-Sell-on-Your-Own-Website-or-Amazon-Flipkart-in-India.html',
   './Proven-Method-to-Organically-Increase-Reach-and-Profile-Visits-on-Instagram.html',
-  './How-to-Use-Quora-Ads-to-Promote-Your-Business.html',
 ]
 
 document.getElementById('first-blog-card-img').src = blogIMG[0]
