@@ -1575,6 +1575,12 @@ option {
 	font-size: 18px;
 }
 
+.lili {
+	margin: 10px 0;
+	font-weight: 300;
+	font-size: 18px;
+}
+
 .lilili::before {
 	display: inline-block;
 	content: '-';
