@@ -2,19 +2,19 @@
 // blog card data
 
 const blogIMG = [
+  '../assets/blogs/How to Price Products to Sell Online – Understand with an Example.png',
   '../assets/blogs/Featured img - How to Advertise on Sharechat.png',
   '../assets/blogs/01 (4) (1).jpg',
-  '../assets/blogs/instaThumbnail.jpeg',
 ]
 const blogTitle = [
+  '<div>How to Price Products to Sell Online- T-Shirt Pricing Strategy</div>',
   '<div>How to Run Ads on ShareChat</div>',
   '<div>Should You Sell on Your Own Website or Amazon / Flipkart in India?</div>',
-  '<div>Proven Method to Organically Increase Reach and Profile Visits on Instagram</div>',
 ]
 const blogLink = [
+  '../blog/How-to-Price-Products-to-Sell-Online.html',
   './How-to-Run-Ads-on-ShareChat.html',
   './Should-You-Sell-on-Your-Own-Website-or-Amazon-Flipkart-in-India.html',
-  './Proven-Method-to-Organically-Increase-Reach-and-Profile-Visits-on-Instagram.html',
 ]
 
 document.getElementById('first-blog-card-img').src = blogIMG[0]
