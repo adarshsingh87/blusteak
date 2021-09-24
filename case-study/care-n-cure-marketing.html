@@ -241,22 +241,101 @@ Kottayam",
 		<div class="qbt_form-popup" id="myForm">
 			<div class="qbt_btn qbt_cancel" onclick="closeForm()">We'd love to talk to you &#128075;<span style="float:right;"><i
 						class="fa fa-chevron-down"></i></span></div>
-			<form action="/thank-you.php" class="qbt_form-container" method="post">
+			<form id="quickContact" class="qbt_form-container">
+				<span class="success_msg2"></span>
 				<input type="text" placeholder="Enter Phone*" name="phone" required>
 				<input type="text" placeholder="Enter Email*" name="email" required>
 				<textarea placeholder="Enter Message*" name="message" required></textarea>
-				<button type="submit" class="qbt_btn">Send</button>
+				<button type="submit" class="qbt_btn" id="quickContactSubmit">Send</button>
 				<div class="qbt_call-btn"><a href="tel:+917594910232">Or call us now: +91 75949 10232</a></div>
 			</form>
 		</div>
 		<div class="qbt_call-mobile"><a href="tel:+917594910232"><i class="fa fa-phone"></i></a></div>
 		<script>
+
+			$( document ).ready( function () {
+				var form = $( '#contactForm' );
+				var submit = $( '.cf-submit' );
+				var userMsg = $( '.success_msg' );
+
+				// form 1 submit event
+				form.on( 'submit', function ( e ) {
+					e.preventDefault(); // prevent default form submit
+
+					$.ajax( {
+						url: 'contact-mail.php', // form action url
+						type: 'POST', // form submit method get/post
+						dataType: 'html', // request type html/json/xml
+						data: form.serialize(), // serialize form data
+						crossDomain: true,
+						beforeSend: function () {
+							userMsg.fadeOut();
+							submit.html( 'Sending....' ); // change submit button text
+						},
+						success: function ( data ) {
+							if ( data == "1" ) {
+								window.location = "https://blusteak.com/thank-you";
+							} else {
+								$( "html, body" ).animate( { scrollTop: 0 }, "slow" );
+								userMsg.html( data ).fadeIn(); // fade in response data
+								form.trigger( 'reset' ); // reset form
+								submit.html( 'Send Message' ); // reset submit button text
+							}
+						},
+						error: function ( e ) {
+							console.log( e )
+						}
+					} );
+				} );
+				var form2 = $( '#quickContact' );
+				var submit2 = $( '#quickContactSubmit' );
+				var userMsg2 = $( '.success_msg2' );
+
+				// form 1 submit event
+				form2.on( 'submit', function ( e ) {
+					e.preventDefault(); // prevent default form submit
+
+					$.ajax( {
+						url: 'quick-contact.php', // form action url
+						type: 'POST', // form submit method get/post
+						dataType: 'html', // request type html/json/xml
+						data: form2.serialize(), // serialize form data
+						crossDomain: true,
+						beforeSend: function () {
+							userMsg2.fadeOut();
+							submit2.html( 'Sending....' ); // change submit button text
+						},
+						success: function ( data2 ) {
+							if ( data2 == "1" ) {
+								window.location = "https://blusteak.com/thank-you";
+							} else {
+								// $("html, body").animate({ scrollTop: 0 }, "slow");
+								userMsg2.html( data2 ).fadeIn(); // fade in response data
+								form2.trigger( 'reset' ); // reset form
+								submit2.html( 'Send' ); // reset submit button text
+							}
+						},
+						error: function ( e ) {
+							console.log( e )
+						}
+					} );
+				} );
+
+
+
+
+			} );
+
+
 			function openForm() {
 				document.getElementById( "myForm" ).style.display = "block";
 			}
 			function closeForm() {
 				document.getElementById( "myForm" ).style.display = "none";
 			}
+		</script>
+		<script>
+			console.log( "made by adarsh: http://adarshsingh87.github.io/" )
 		</script>
 	<script>
 console.log("made by adarsh: http://adarshsingh87.github.io/")
