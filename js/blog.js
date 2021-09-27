@@ -2,7 +2,7 @@
 // blog card data
 
 const blogIMG = [
-  '../assets/blogs/How to Price Products to Sell Online – Understand with an Example.png',
+  '../assets/blogs/How to Price Products to Sell OnlineUnderstand with an Example.png',
   '../assets/blogs/Featured img - How to Advertise on Sharechat.png',
   '../assets/blogs/01 (4) (1).jpg',
 ]
